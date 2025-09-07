@@ -1,4 +1,10 @@
 $(document).ready(function() {
+const chillZonePage = $('#page-three')
+const neonCityPage = $('#page-two')
+const navButtons = $('#nav-list li').toArray();
+const [homeBtn, neonCityBtn, catalogBtn, chillZoneBtn] = navButtons;
+const dropdownBtn = $("#dropdown-button")
+
 
 
 $('#nav-list > li').on('mouseover', function(){
@@ -18,6 +24,21 @@ $('.down-dropper').click(function(){
 })
 
 */
+$(chillZoneBtn).click(function () {
+    scrollToElement(chillZonePage)
+});
+$(neonCityBtn).click(function () {
+    dropdownBtn.click()
+    scrollToElement(neonCityPage)
+})
 
 
+
+
+
+const scrollToElement = (element) => {  //Service function to scroll to element upon clicking
+    $('html, body').animate({
+        scrollTop: $(element).offset().top
+    }, 100)
+}
 })

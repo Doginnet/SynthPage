@@ -1,0 +1,63 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  z-index: -2;
+ 
+}
+
+
+
+body{
+
+   color: aliceblue;
+    background-color: #838ea1db;
+    background-image: url("./assets/background/pink-planet.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ position: relative;
+ background-blend-mode:hard-light;
+  }
+
+  .bg-filter{
+    width: 100%;
+    height: auto;
+    background-color: #1212121c;
+    backdrop-filter:blur(100px);
+   
+    z-index: -1;
+  }
+  
+  #page-container{
+width: 100%;
+height: 100%;
+background: linear-gradient(350deg, #25252590 100%, #2020209b 70%, #1b1a1a60 80%);
+z-index: 1;
+box-shadow: 2px 2px 12px 1px #121212, -2px -1px 12px 1px #121212;
+  }
+  
+
+
+  .side-menu{
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    z-index: 2;
+  }
+
+  #dropdown-arrow{
+    display: inline-block;
+    transform-origin: center;
+    transition: all .3s ease;
+  }
+
+  .dropdown-arrow-open{
+    transform: rotate(90deg);
+  }
+
+
+  .img-carousel{
+height: 800px;
+  }
