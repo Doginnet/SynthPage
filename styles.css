@@ -370,9 +370,12 @@ text-shadow: 2px 2px 1px #6ABACF, 1px 1px 3px rgba(0, 0, 0, 0.8);
 /* Navbar */
 .nav-wrapper{
     transition: all .5s ease-in-out;
+    border: none;
 }
 
 #page-three-navbar{
+    box-shadow: none;
+    background: transparent;
     color: #0a8ab9d6;
     text-shadow: 2px 2px 25px #e3110d;
     font-weight: 400;
@@ -393,6 +396,7 @@ text-shadow: 2px 2px 1px #6ABACF, 1px 1px 3px rgba(0, 0, 0, 0.8);
     text-shadow: 2px 2px 25px #e30d71;
 }
 #page-three-navbar > li:hover{
+    text-decoration: underline;
     color: #e30d71;
     text-shadow: 2px 2px 25px #e3110d;
     font-weight: 400;
